@@ -17,6 +17,12 @@ Plug 'jiangmiao/auto-pairs'
 
 call plug#end()
 
+" Commands
+:command CompileThread !rm a.out; clear; clang++ -pthread -std=c++11 -Wextra -Werror -Wpedantic -Wall -g3 -O0 %:t
+
+:command Compile !rm a.out; clear; clang++ -std=c++11 -Wextra -Werror -Wpedantic -Wall -g3 -O0 %:t
+
+:command Run !clear; ./a.out
 
 " GENERAL -------------------------------------
 
@@ -69,7 +75,9 @@ let g:lightline = { 'colorscheme': 'solarized', }
 
 " You Complete Me
 let g:ycm_max_diagnostics_to_display = 1000
+" let g:loaded_youcompleteme = 1 "Disable YCM
 
 " Tag Bar
 nnoremap <LEADER>t :TagbarToggle<CR>
+
 
