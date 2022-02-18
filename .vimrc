@@ -18,9 +18,9 @@ Plug 'jiangmiao/auto-pairs'
 call plug#end()
 
 " Commands
-:command CompileThread !rm a.out; clear; clang++ -pthread -std=c++11 -Wextra -Werror -Wpedantic -Wall -g3 -O0 %:t
+:command CompileThread :w | !rm a.out; clear; clang++ -pthread -std=c++11 -Wextra -Werror -Wpedantic -Wall -g3 -O0 %:t
 
-:command Compile !rm a.out; clear; clang++ -std=c++11 -Wextra -Werror -Wpedantic -Wall -g3 -O0 %:t
+:command Compile :w | !rm a.out; clear; clang++ -std=c++11 -Wextra -Werror -Wpedantic -Wall -g3 -O0 %:t
 
 :command Run !clear; ./a.out
 
@@ -79,5 +79,4 @@ let g:ycm_max_diagnostics_to_display = 1000
 
 " Tag Bar
 nnoremap <LEADER>t :TagbarToggle<CR>
-
 
