@@ -24,6 +24,8 @@ call plug#end()
 
 :command Run !clear; ./a.out
 
+nnoremap <LEADER>df :d]}<CR>
+
 " GENERAL -------------------------------------
 
 let mapleader = " "
@@ -42,7 +44,7 @@ set linebreak
 set scrolloff=15
 set incsearch
 syntax enable
-set wrap " Line Wrapping - IDK if i want this yet
+set wrap
 set wildmenu
 set number
 set relativenumber
@@ -79,4 +81,3 @@ let g:ycm_max_diagnostics_to_display = 1000
 
 " Tag Bar
 nnoremap <LEADER>t :TagbarToggle<CR>
-
