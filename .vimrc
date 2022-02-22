@@ -24,8 +24,6 @@ call plug#end()
 
 :command Run !clear; ./a.out
 
-nnoremap <LEADER>df :d]}<CR>
-
 " GENERAL -------------------------------------
 
 let mapleader = " "
