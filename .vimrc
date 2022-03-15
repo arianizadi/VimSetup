@@ -27,6 +27,7 @@ call plug#end()
 let mapleader=" "
 set exrc
 set signcolumn=yes
+set colorcolumn=80
 set backspace=indent,eol,start
 set autoindent
 set expandtab
