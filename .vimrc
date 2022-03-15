@@ -24,8 +24,9 @@ call plug#end()
 
 " GENERAL -------------------------------------
 
-let mapleader = " "
+let mapleader=" "
 set exrc
+set signcolumn=yes
 set backspace=indent,eol,start
 set autoindent
 set expandtab
